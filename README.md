@@ -1,7 +1,10 @@
 <h1 align="center"><b>Become a Software Professional 2022</b></h1>
 
+# Week 1
+The objective of week 1 was to create a screenflow using Figma.
+
 # Week 2
-The objective of week 2 is to recreate the landing page of week 1 using HTML.
+The objective of week 2 was to recreate the landing page of week 1 using HTML.
 
 ## Acknowledgments
 - <a href="https://www.w3schools.com/html/default.asp" target="_blank">https://www.w3schools.com/html/default.asp</a>
