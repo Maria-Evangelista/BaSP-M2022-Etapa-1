@@ -11,11 +11,10 @@
     <body>
         <header class="track-header">
             <label class="TG-hd">Trackgenix</label>
-            <img src="./assets/rocketlogo.jpg" 
-            width="60" height="65" align="right"/>
+            <img src="./assets/rocketlogo.jpg" align="right" class="RL-hd"/>
         </header>
         <aside class="sb-pos">
-            <div class="form-aside">
+            <div class="search-aside">
                 <form>
                     <input type="text" placeholder="Search..">
                 </form>
@@ -60,8 +59,8 @@
             <h1 class="greenline">Trackgenix SA</h1>         
             <section class="greenline">
                 <h2>Trackgenix app</h2>
-                <img src="./assets/time.jpg" 
-                width="200" height="200" align="right" class="item-app"/>
+                <img src="./assets/time.jpg" align="right" class="item-app"/>
+                <!-- width="200" height="200"  /> -->
                 <p class="paragraph item-app">
                     Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis
                     eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. 
@@ -125,10 +124,14 @@
                 <h2>Form</h2>
                 <div>
                     <div class="form-form">
-                        <input type="text" id="name" name="name" required minlength="4" 
+                        <div>
+                            <input type="text" id="name" name="name" required minlength="4" 
                             maxlength="10" size="30" placeholder="Name">
-                        <input type="text" id="email" name="email" required minlength="4" 
+                        </div>
+                        <div>
+                            <input type="text" id="email" name="email" required minlength="4" 
                             maxlength="30" size="30" placeholder="Email">
+                        </div>
                         <h3>Contact Area:</h3>
                         <div class="contact-area">
                             <div>
@@ -145,7 +148,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-form">
+                    <div class="form-form message">
                         <p>
                             Message
                         </p>
