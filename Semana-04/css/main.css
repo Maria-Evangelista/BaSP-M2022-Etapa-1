@@ -3,8 +3,14 @@ main {
     margin-left: 20%; */
     /* margin-top: 75px; */
     /* margin-top: 5%; */
-    padding-left: 2%; 
+    padding-left: 2%;
+    padding-right: 2%;
     background-color:hotpink;
+}
+
+.menu-hamb{
+    margin-top: 10px;
+    width: 30px;
 }
 
 .trackgenixapp-container {
@@ -16,7 +22,7 @@ main {
 }
 
 .item-app {
-    /* background-color: purple; */
+    background-color: purple;
     border: 2px aqua solid;
 }
 
@@ -68,6 +74,7 @@ img.item-app{
 
 .history-item {
     border: 2px solid yellow;
+    width: 80%;
 }
 
 p.paragraph.item-his {
@@ -89,7 +96,7 @@ p.paragraph.item-his {
     width: 10%; */
     /* padding-left: 190px; */
     color: #958888;
-    /* background-color: yellow; */
+    background-color: yellow;
     padding: 10px;
 }
 
@@ -98,9 +105,9 @@ p.paragraph.item-his {
     color: #000000;
 }
 
-/* .contact-area {
-    margin-left: 95px;
-} */
+.contact-area {
+    padding-left: 15%;
+}
 
 p.paragraph.item-app {
     padding-bottom: 20px;
@@ -109,18 +116,32 @@ p.paragraph.item-app {
 .functionalities-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background-color: pink;
+    justify-content: space-around;
 }
 
 .p-func {
-    width: 50%;
-    margin: 15px;
+    width: 70%;
+    margin-bottom: 15px;
     padding: 5px;
     border: 1px solid #373867;
     border-radius: 5px;
     font-weight: bold;
     color: #373867;
     background-color: yellow;
+}
+
+.func-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .color-item {
@@ -141,4 +162,48 @@ p.paragraph.item-app {
     /* width: 47%; */
     padding: 10px;
     margin: 5px;
+}
+
+@media (max-width: 768px) and (min-width: 480px){
+    .trackgenixapp-container {
+        display: flex;
+        flex-direction: row;
+        background-color: yellow;
+        justify-content: space-around;
+    }
+
+    .functionalities-container {
+        display: flex;
+        flex-direction: row;
+        background-color: yellow;
+        justify-content: space-around;
+
+    }
+
+    .column{
+        flex-direction: row;
+    }
+
+    .func-column p{
+        width: 40%;
+    }
+
+    .p-func {
+        margin: 13px;
+    }
+
+    .form-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .history-container .column:nth-child(1) {
+        flex-direction: row-reverse;
+    }
+
+    .pcs-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }

@@ -61,3 +61,15 @@ p.menu {
 .mail {
     color: #000000;
 }
+
+@media screen and (max-width: 480px){
+    aside {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    aside {
+        display: none;
+    }
+}

@@ -25,6 +25,10 @@ header {
     /* right: 5%; */
 }
 
+.TG-hd {
+    padding-top: 0.5%;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
