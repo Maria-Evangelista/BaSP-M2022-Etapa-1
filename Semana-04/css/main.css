@@ -1,0 +1,144 @@
+main {
+    /* width: 80%;
+    margin-left: 20%; */
+    /* margin-top: 75px; */
+    /* margin-top: 5%; */
+    padding-left: 2%; 
+    background-color:hotpink;
+}
+
+.trackgenixapp-container {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    align-items: center;
+    text-align: center;
+}
+
+.item-app {
+    /* background-color: purple; */
+    border: 2px aqua solid;
+}
+
+img.item-app{
+    width: 40%;
+}
+
+.form-container {
+    display: flex;
+    /* width:43%; */
+    margin-bottom: 10px;
+    /* position: relative; */
+    /* left: 140px; */
+    flex-direction: column;
+    align-items: center;
+    background-color: yellow;
+}
+
+.form-item {
+    background-color: mistyrose;
+}
+
+/* .form-buttons {
+    width: 100%;
+} */
+
+#email {
+    margin: 10px 0 10px 0px;
+}
+
+/* .form-form.message {
+    position: relative;
+    top: -10px;
+} */
+
+#message {
+    height: 100px;
+    width: 100%;
+    margin: 10px 10px 10px 0px;
+}
+
+.history-container {
+    /* margin-bottom: 25px;
+    padding-left: 60px; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.history-item {
+    border: 2px solid yellow;
+}
+
+p.paragraph.item-his {
+    position: relative;
+    top: -80px;
+    color: #958888;
+}
+
+.pcs-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pcs-item{
+    /* display: inline-block;
+    width: 10%; */
+    /* padding-left: 190px; */
+    color: #958888;
+    /* background-color: yellow; */
+    padding: 10px;
+}
+
+.pcs-item p {
+    /* padding-left: 20px; */
+    color: #000000;
+}
+
+/* .contact-area {
+    margin-left: 95px;
+} */
+
+p.paragraph.item-app {
+    padding-bottom: 20px;
+}
+
+.functionalities-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-func {
+    width: 50%;
+    margin: 15px;
+    padding: 5px;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #373867;
+    background-color: yellow;
+}
+
+.color-item {
+    font-weight: bold;
+    color: #34636E;
+}
+
+.wut-container {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    align-items: center;
+    text-align: center;
+}
+
+.item-wut {
+    background-color: orange;
+    /* width: 47%; */
+    padding: 10px;
+    margin: 5px;
+}

@@ -5,13 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trackgenix</title>
-        <link rel="stylesheet" href="css\reset.css">
-        <link rel="stylesheet" href="css\index.css">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/sidebar.css">
     </head>
     <body>
-        <header class="track-header">
-            <label class="TG-hd">Trackgenix</label>
-            <img src="./assets/rocketlogo.jpg" align="right" class="RL-hd"/>
+        <header class="track-header header-container">
+            <label class="TG-hd header-item">Trackgenix</label>
+            <img src="./assets/rocketlogo.jpg" align="right" class="RL-hd header-item"/>
         </header>
         <aside class="sb-pos">
             <div class="search-aside">
@@ -25,10 +29,12 @@
                 <p class="sidebar">Sign Up</p>
                 <p class="sidebar">Log In</p>
                 <p class="sidebar CI">Contact information</p>
-                <!-- <<li><a href="#">>Home</a></li>
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Log In</a></li>
-                <li><a href="#">Contact information</a></li> -->
+                <!-- 
+                <li><a href="#" class="menu">>Home</a></li>
+                <li><a href="#" class="sidebar">Sign Up</a></li>
+                <li><a href="#" class="sidebar">Log In</a></li>
+                <li><a href="#" class="sidebar CI">Contact information</a></li> 
+                -->
                 <p class="paragraph">
                     Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, 
                     ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. 
@@ -59,22 +65,23 @@
             <h1 class="greenline">Trackgenix SA</h1>         
             <section class="greenline">
                 <h2>Trackgenix app</h2>
-                <img src="./assets/time.jpg" align="right" class="item-app"/>
-                <!-- width="200" height="200"  /> -->
-                <p class="paragraph item-app">
-                    Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis
-                    eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. 
-                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
-                    faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. 
-                    tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod.
-                    Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu
-                    felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
-                    praesent.
-                </p>
+                <div class="trackgenixapp-container">
+                    <p class="paragraph item-app">
+                        Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis
+                        eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. 
+                        Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
+                        faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. 
+                        tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod.
+                        Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu
+                        felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
+                        praesent.
+                    </p>
+                    <img src="./assets/time.jpg" class="item-app"/>
+                </div>
             </section>
             <section class="greenline">
                 <h2>Functionalities</h2>
-                <div class="func-sect">
+                <div class="functionalities-container">
                     <p class="p-func">
                         <span class="color-item">o</span> Hours log 
                     </p>
@@ -91,49 +98,51 @@
             </section>
             <section class="greenline"> 
                 <h2>Why use Trackgenix?</h2>
-                    <div class="item-wut">
-                        <h3>Productivity booster</h3>
-                        <p class="paragraph">
-                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
-                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-                        </p>
-                    </div>
-                    <div class="item-wut">
-                        <h3>Work traceability</h3>
-                        <p class="paragraph">
-                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
-                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-                        </p>
-                    </div>
-                    <div class="item-wut">
-                        <h3>Leadership and team management</h3>
-                        <p class="paragraph">   
-                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
-                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-                        </p>
-                    </div>
-                    <div class="item-wut">
-                        <h3>Decision making</h3>
-                        <p class="paragraph">
-                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
-                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-                        </p>
+                    <div class="wut-container">
+                        <div class="item-wut">
+                            <h3>Productivity booster</h3>
+                            <p class="paragraph">
+                                Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
+                                Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                            </p>
+                        </div>
+                        <div class="item-wut">
+                            <h3>Work traceability</h3>
+                            <p class="paragraph">
+                                Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
+                                Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                            </p>
+                        </div>
+                        <div class="item-wut">
+                            <h3>Leadership and team management</h3>
+                            <p class="paragraph">   
+                                Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
+                                Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                            </p>
+                        </div>
+                        <div class="item-wut">
+                            <h3>Decision making</h3>
+                            <p class="paragraph">
+                                Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
+                                Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                            </p>
+                        </div>
                     </div>
             </section>    
             <section class="greenline">    
                 <h2>Form</h2>
-                <div>
-                    <div class="form-form">
-                        <div>
+                <div class="form-container">
+                    <div>
+                        <div class="form-item">
                             <input type="text" id="name" name="name" required minlength="4" 
                             maxlength="10" size="30" placeholder="Name">
                         </div>
-                        <div>
+                        <div class="form-item">
                             <input type="text" id="email" name="email" required minlength="4" 
                             maxlength="30" size="30" placeholder="Email">
                         </div>
-                        <h3>Contact Area:</h3>
-                        <div class="contact-area">
+                        <h3 class="form-item">Contact Area:</h3>
+                        <div class="contact-area form-item">
                             <div>
                                 <input type="checkbox" id="cbox1" value="first_checkbox">
                                 <label for="cbox1">Human resources</label>
@@ -148,46 +157,48 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-form message">
+                    <div class="form-item"">
                         <p>
                             Message
                         </p>
                         <input type="text" id="message" name="message" required minlength="4" maxlength="200" 
                         size="40" placeholder="Message">
-                        <p>
-                            <button name="Send">Send</button>
-                            <button name="Return">Return</button>
-                        </p>
+                    </div>    
+                    <div class="form-buttons">    
+                        <button name="Send">Send</button>
+                        <button name="Return">Return</button>
                     </div>
                 </div>
             </section>
             <section class="greenline">
                 <h2>History</h2>
-                    <div class="history">
-                        <span class="history-box"> 
-                            <img src="./assets/history1.jpg">
-                            <!-- width="400" height="300" class="item-his"> -->
-                            <p class="paragraph item-his">
-                                Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. 
-                                Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat 
-                                ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. 
-                                tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod.
-                            </p>
-                        </span>
-                        <span class="history-box">
-                            <p class="paragraph item-his">
-                                Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. 
-                                Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat 
-                                c adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. 
-                                tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod.
-                            </p>
-                            <img src="./assets/history2.jpg" >
-                            <!-- width="400" height="300" class="item-his"> -->
-                        </span>
+                    <div class="history-container">
+                        <p class="paragraph history-item">
+                            Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis 
+                            sagittis eget. tempus euismod. 
+                            Vestibulum ante ipsum primis in faucibus vestibulum. 
+                            Blandit adipiscing eu felis iaculis volutpat 
+                            ac adipiscing accumsan eu faucibus. Integer ac pellentesque 
+                            praesent tincidunt felis sagittis eget. 
+                            tempus euismod. Vestibulum ante ipsum primis sagittis eget. 
+                            tempus euismod.
+                        </p>
+                        <img src="./assets/history1.jpg" class="history-item">
+                        <p class="paragraph history-item">
+                            Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis 
+                            sagittis eget. tempus euismod. 
+                            Vestibulum ante ipsum primis in faucibus vestibulum. 
+                            Blandit adipiscing eu felis iaculis volutpat 
+                            c adipiscing accumsan eu faucibus. Integer ac pellentesque 
+                            praesent tincidunt felis sagittis eget. 
+                            tempus euismod. Vestibulum ante ipsum primis sagittis eget. 
+                            tempus euismod.
+                        </p>
+                        <img src="./assets/history2.jpg" class="history-item">
                     </div>
             </section>
-            <section class="greenline pcs-section">
-                <div class="item-pcs">
+            <section class="greenline pcs-container">
+                <div class="pcs-item">
                     <p>Products</p>
                         <ol>
                             <li>Funcionalities</li>
@@ -196,7 +207,7 @@
                             <li>Extras</li>
                         </ol>    
                 </div>
-                <div class="item-pcs">
+                <div class="pcs-item">
                     <p>Company</p>
                     <ol>
                         <li>About Us</li>
@@ -205,7 +216,7 @@
                         <li>Blog</li>
                     </ol>    
                 </div>
-                <div class="item-pcs">
+                <div class="pcs-item">
                     <p>Suport</p>
                     <ol>
                         <li>Help</li>
