@@ -1,86 +1,22 @@
 main {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 4.5%;
+    padding-right: 4%;
 }
 
 .menu-hamb{
-    margin-top: 10px;
     width: 30px;
+    margin-top: 10px;
 }
 
 .trackgenixapp-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 img.item-app{
     width: 70%;
-}
-
-.form-container {
-    display: flex;
-    margin-bottom: 10px;
-    flex-direction: column;
-    align-items: center;
-}
-
-#email {
-    margin: 10px 0 10px 0px;
-}
-
-#message {
-    height: 100px;
-    width: 100%;
-    margin: 10px 10px 10px 0px;
-    border: 1px solid #E0E0E0;
-    border-radius: 4px;
-}
-
-button {
-    border: 1px solid #373867;
-    border-radius: 4px;
-    background-color: #FFFFFF;
-    height: 30px;
-    width: 100px;
-}
-
-.form-buttons {
-    display: flex;
-    justify-content: space-around;
-}
-
-.history-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.history-item {
-    width: 100%;
-}
-
-.pcs-container {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.pcs-item{
-    color: #958888;
-    padding: 10px;
-}
-
-.pcs-item p {
-    color: #000000;
-    text-align: center;
-}
-
-.contact-area {
-    padding-left: 15%;
 }
 
 p.grey-paragraph.item-app {
@@ -93,6 +29,13 @@ p.grey-paragraph.item-app {
     justify-content: space-around;
 }
 
+.func-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .p-func {
     width: 70%;
     margin-bottom: 15px;
@@ -101,19 +44,6 @@ p.grey-paragraph.item-app {
     border-radius: 5px;
     font-weight: bold;
     color: #373867;
-}
-
-.func-column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .color-item {
@@ -125,15 +55,93 @@ p.grey-paragraph.item-app {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 .item-whyuse {
-    padding: 10px;
     margin: 5px;
+    padding: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#email {
+    margin: 10px 0 10px 0px;
+}
+
+.contact-area {
+    padding-left: 15%;
+}
+
+#message {
+    height: 100px;
+    width: 100%;
+    margin: 10px 10px 10px 0px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons {
+    width: 100px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1)
+}
+
+.history-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.history-item {
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.pcs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pcs-item{
+    padding: 10px;
+    color: #958888;
+}
+
+.pcs-item p {
+    padding-bottom: 4px;
+    color: #000000;
+    text-align: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (min-width: 480px){
+    main {
+        padding-left: 3%;
+        padding-right: 2%;
+    }
+    
     .trackgenixapp-container {
         display: flex;
         flex-direction: row;
@@ -167,6 +175,15 @@ p.grey-paragraph.item-app {
         justify-content: space-around;
     }
 
+    .buttons:hover {
+        background-color: #ececec;
+    }
+
+    .buttons:active {
+        background-color: #d1d1d1;
+        transform: translateY(2px);
+    }
+
     .history-container .column:nth-child(1) {
         flex-direction: row-reverse;
     }
@@ -180,29 +197,17 @@ p.grey-paragraph.item-app {
         flex-direction: row;
         justify-content: space-around;
     }
-
-    .trackgenixapp-container {
-        text-align: left;
-    }
-
-    .whyuse-container {
-        text-align: left;
-    }
-
-    .history-container {
-        text-align: left;
-    }
-
 }
 
 @media (min-width: 768px) {
     main {
         margin-left: 250px;
         padding-top: 65px;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     .menu-hamb {
         display: none;
     }
-
 }
