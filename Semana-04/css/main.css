@@ -16,7 +16,7 @@ main {
 }
 
 img.item-app{
-    width: 40%;
+    width: 70%;
 }
 
 .form-container {
@@ -34,6 +34,21 @@ img.item-app{
     height: 100px;
     width: 100%;
     margin: 10px 10px 10px 0px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+}
+
+button {
+    border: 1px solid #373867;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    height: 30px;
+    width: 100px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-around;
 }
 
 .history-container {
@@ -43,13 +58,7 @@ img.item-app{
 }
 
 .history-item {
-    width: 80%;
-}
-
-p.paragraph.item-his {
-    position: relative;
-    top: -80px;
-    color: #958888;
+    width: 100%;
 }
 
 .pcs-container {
@@ -67,13 +76,14 @@ p.paragraph.item-his {
 
 .pcs-item p {
     color: #000000;
+    text-align: center;
 }
 
 .contact-area {
     padding-left: 15%;
 }
 
-p.paragraph.item-app {
+p.grey-paragraph.item-app {
     padding-bottom: 20px;
 }
 
@@ -111,14 +121,14 @@ p.paragraph.item-app {
     color: #34636E;
 }
 
-.wut-container {
+.whyuse-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.item-wut {
+.item-whyuse {
     padding: 10px;
     margin: 5px;
 }
@@ -128,6 +138,10 @@ p.paragraph.item-app {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    img.item-app{
+        width: 45%;
     }
 
     .functionalities-container {
@@ -157,11 +171,28 @@ p.paragraph.item-app {
         flex-direction: row-reverse;
     }
 
+    .history-item {
+        width: 50%;
+    }
+
     .pcs-container{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
+
+    .trackgenixapp-container {
+        text-align: left;
+    }
+
+    .whyuse-container {
+        text-align: left;
+    }
+
+    .history-container {
+        text-align: left;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -172,18 +203,6 @@ p.paragraph.item-app {
 
     .menu-hamb {
         display: none;
-    }
-
-    .trackgenixapp-container {
-        text-align: left;
-    }
-
-    .wut-container {
-        text-align: left;
-    }
-
-    .history-container {
-        text-align: left;
     }
 
 }

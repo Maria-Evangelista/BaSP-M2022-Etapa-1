@@ -6,20 +6,17 @@ header {
     font-size: 37px;
     font-weight: bold;
     color: #373867;
+    display: flex;
+    justify-content: space-between;
 }
 
-.RL-hd {
+.rocketlogo-header {
     width: 60px;
     height: 65px;
 }
 
-.TG-hd {
+.trackgenix-text-header {
     padding-top: 0.5%;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
 }
 
 .header-item:first-child  {
