@@ -1,8 +1,4 @@
 main {
-    /* width: 80%;
-    margin-left: 20%; */
-    /* margin-top: 75px; */
-    /* margin-top: 5%; */
     padding-left: 2%;
     padding-right: 2%;
     background-color:hotpink;
@@ -32,10 +28,7 @@ img.item-app{
 
 .form-container {
     display: flex;
-    /* width:43%; */
     margin-bottom: 10px;
-    /* position: relative; */
-    /* left: 140px; */
     flex-direction: column;
     align-items: center;
     background-color: yellow;
@@ -45,18 +38,9 @@ img.item-app{
     background-color: mistyrose;
 }
 
-/* .form-buttons {
-    width: 100%;
-} */
-
 #email {
     margin: 10px 0 10px 0px;
 }
-
-/* .form-form.message {
-    position: relative;
-    top: -10px;
-} */
 
 #message {
     height: 100px;
@@ -65,8 +49,6 @@ img.item-app{
 }
 
 .history-container {
-    /* margin-bottom: 25px;
-    padding-left: 60px; */
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -92,16 +74,12 @@ p.paragraph.item-his {
 }
 
 .pcs-item{
-    /* display: inline-block;
-    width: 10%; */
-    /* padding-left: 190px; */
     color: #958888;
     background-color: yellow;
     padding: 10px;
 }
 
 .pcs-item p {
-    /* padding-left: 20px; */
     color: #000000;
 }
 
@@ -164,7 +142,7 @@ p.paragraph.item-app {
     margin: 5px;
 }
 
-@media (max-width: 768px) and (min-width: 480px){
+@media (min-width: 480px){
     .trackgenixapp-container {
         display: flex;
         flex-direction: row;
@@ -177,7 +155,6 @@ p.paragraph.item-app {
         flex-direction: row;
         background-color: yellow;
         justify-content: space-around;
-
     }
 
     .column{
@@ -206,4 +183,28 @@ p.paragraph.item-app {
         flex-direction: row;
         justify-content: space-around;
     }
+}
+
+@media (min-width: 768px) {
+    main {
+        margin-left: 250px;
+        padding-top: 65px;
+    }
+
+    .menu-hamb {
+        display: none;
+    }
+
+    .trackgenixapp-container {
+        text-align: left;
+    }
+
+    .wut-container {
+        text-align: left;
+    }
+
+    .history-container {
+        text-align: left;
+    }
+
 }

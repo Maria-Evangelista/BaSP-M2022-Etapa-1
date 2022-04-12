@@ -3,10 +3,6 @@
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* body {
-    padding-left: 20px;
-} */
-
 p.paragraph {
     color: #958888;
 }
@@ -24,14 +20,13 @@ h1, h2 {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 25px;
-    /* font-weight: bold; */
 }
 
 h3 {
     font-size: 20px;
 }
 
-@media screen and (max-width: 480px){
+@media (max-width: 480px){
     header {
         width: 100%;
         margin: 0;
@@ -44,7 +39,7 @@ h3 {
     }
 }
 
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
     header {
         width: 100%;
         margin: 0;
