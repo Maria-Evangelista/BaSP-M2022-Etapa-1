@@ -25,25 +25,14 @@ h3 {
     font-size: 16px;
 }
 
-.trackgenix-text-header {
-    font-size: 25px;
-    padding-top: 15px;    
-}
-
-/* h1, h2 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 25px;
-} */
-
-/* h3 {
-    padding-bottom: 7px;
-    font-size: 20px;
-} */
-
 input {
     border: 1px solid #373867;
     border-radius: 4px;
+}
+
+.trackgenix-text-header {
+    font-size: 25px;
+    padding-top: 15px;    
 }
 
 .greenline {
