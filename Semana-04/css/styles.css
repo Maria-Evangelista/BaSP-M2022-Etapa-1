@@ -3,20 +3,43 @@
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+p, li, label {
+    font-size: 14px;
+}
+
 h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 22.5px;
     font-weight: bold;
 }
 
-h1, h2 {
+h2 {
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 h3 {
     padding-bottom: 7px;
-    font-size: 20px;
+    font-size: 16px;
 }
+
+.trackgenix-text-header {
+    font-size: 25px;
+    padding-top: 15px;    
+}
+
+/* h1, h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+} */
+
+/* h3 {
+    padding-bottom: 7px;
+    font-size: 20px;
+} */
 
 input {
     border: 1px solid #373867;
@@ -30,4 +53,62 @@ input {
 
 p.grey-paragraph {
     color: #958888;
+}
+
+@media (min-width: 480px) {
+    p, li, label {
+        font-size: 15px;
+    }
+    
+    h1 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    h2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 22px;
+    }
+    
+    h3 {
+        padding-bottom: 7px;
+        font-size: 18px;
+    }
+    
+    .trackgenix-text-header {
+        font-size: 30px;
+        padding-top: 10px;    
+    }
+}
+
+@media (min-width: 768px) {
+    p, li, label {
+        font-size: 16px;
+    }
+    
+    h1 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    h2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 24px;
+    }
+    
+    h3 {
+        padding-bottom: 7px;
+        font-size: 20px;
+    }
+    
+    .trackgenix-text-header {
+        font-size: 37px;
+        padding-top: 5px;    
+    }
 }
