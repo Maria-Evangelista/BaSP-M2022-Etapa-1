@@ -24,7 +24,7 @@ The objective of this week was to add style to our HTML project using <b>CSS</b>
 - <a href="https://www.ciudadano2cero.com/aprender-css-basico-desde-cero/" target="_blank"> La guía rápida para aprender CSS básico desde cero [ciudadano2cero.com]</a>
 
 # Week 4
-The objective of week 4 is to replicate the landing page of the screenflow of week 1 using <b>Flexbox</b> and following the concept of <i>Mobile First</i>.
+The objective of week 4 was to replicate the landing page of the screenflow of week 1 using <b>Flexbox</b> and following the <i>Mobile First</i> concept.
 <!-- *as the main tool for the creation of a Responsive Design -->
 
 Here's the Github Pages link to see the result: <a href="https://maria-evangelista.github.io/BaSP-M2022-Etapa-1/Semana-04/" target="_blank"> https://maria-evangelista.github.io/BaSP-M2022-Etapa-1/Semana-04/</a> 
@@ -36,6 +36,15 @@ Here's the Github Pages link to see the result: <a href="https://maria-evangelis
   
 - <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank">CSS Box Model [w3schools]</a>
 
+# Week 5
+The objective of week 5 is to solve some <b>JavaScript</b> exercises and correct errors of previous weeks.
+
+## References
+- <a href="https://www.youtube.com/playlist?list=PLEfmn-5Ho68TYu8hB4NG4pWUIJpRXA8dm" target="_blank">Fundamentos de Programación en JavaScript [YouTube playlist - Udemy]</a>
+  
+- <a href="https://www.youtube.com/playlist?list=PLEfmn-5Ho68Qg7airyFpWQFP-Abxnvk-y" target="_blank">JavaScript: Sentencias y bucles [YouTube playlist - Udemy]</a>
+  
+- <a href="https://www.youtube.com/playlist?list=PLEfmn-5Ho68R2r0JyrYD1m9a14ahL_Ywh" target="_blank">JavaScript: Arreglos y objetos [YouTube playlist - Udemy]</a>
 
 # Contact
 Author: Maria Evangelista
