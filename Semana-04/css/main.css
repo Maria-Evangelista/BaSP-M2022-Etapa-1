@@ -46,9 +46,9 @@ p.grey-paragraph.item-app {
     color: #373867;
 }
 
-.color-item {
-    font-weight: bold;
-    color: #34636E;
+.p-func img {
+    width: 9px;
+    height: 9px;
 }
 
 .whyuse-container {
@@ -114,9 +114,10 @@ p.grey-paragraph.item-app {
 .pcs-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 .pcs-item{
@@ -127,7 +128,7 @@ p.grey-paragraph.item-app {
 .pcs-item p {
     padding-bottom: 4px;
     color: #000000;
-    text-align: center;
+    text-align: left;
 }
 
 .column {
@@ -143,7 +144,6 @@ p.grey-paragraph.item-app {
     }
     
     .trackgenixapp-container {
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
@@ -154,9 +154,7 @@ p.grey-paragraph.item-app {
     }
 
     .functionalities-container {
-        display: flex;
         flex-direction: row;
-        justify-content: space-around;
     }
 
     .column{
@@ -194,9 +192,9 @@ p.grey-paragraph.item-app {
     }
 
     .pcs-container{
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
+        padding-left: 0px;
     }
 }
 

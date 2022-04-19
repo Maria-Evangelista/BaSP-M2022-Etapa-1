@@ -11,6 +11,12 @@ footer {
     text-align: center;
 }
 
+.rocketlogo {
+    width: 80px;
+    height: 90px;
+    align-self: center;
+}
+
 @media (min-width: 768px) {
     footer {
         margin-left: 250px;

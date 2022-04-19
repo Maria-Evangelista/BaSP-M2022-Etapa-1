@@ -13,35 +13,45 @@ console.log("The fifth month is", months[5-1], "and the eleventh month is", mont
 /* b. Ordenar el array de meses alfabéticamente y mostrarlo por consola 
 (utilizar sort). */
 console.log("- Exercise 3.b: ");
-console.log(months.sort());
+var bMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+"Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+console.log(bMonths.sort());
 
 /* c. Agregar un elemento al principio y al final del array 
 (utilizar unshift y push). */
 console.log("- Exercise 3.c: ");
-months.unshift("2021");
-months.push("2022");
-console.log(months);
+var cMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+"Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+cMonths.unshift("2021");
+cMonths.push("2022");
+console.log(cMonths);
 
 /* d. Quitar un elemento del principio y del final del array 
 (utilizar shift y pop). */
 console.log("- Exercise 3.d: ");
-months.shift();
-months.pop();
-console.log(months);
+var dMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+"Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+dMonths.shift();
+dMonths.pop();
+console.log(dMonths);
 
 /* e. Invertir el orden del array 
 (utilizar reverse). */
 console.log("- Exercise 3.e: ");
-console.log(months.reverse());
+var eMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+"Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+console.log(eMonths.reverse());
 
 /* f. Unir todos los elementos del array en un único string donde cada mes este separado por un guión - 
 (utilizar join). */
 console.log("- Exercise 3.f: ");
-console.log(months.join("-"));
+var fMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+"Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+console.log(fMonths.join("-"));
 
 /* g. Crear una copia del array de meses que contenga desde Mayo hasta Noviembre 
 (utilizar slice). */
 console.log("- Exercise 3.g: ");
-var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+var gMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
 "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-console.log(months.slice(4,11));
+console.log(gMonths.slice(4,11));
