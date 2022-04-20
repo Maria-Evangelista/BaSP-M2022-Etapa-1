@@ -3,6 +3,14 @@ main {
     padding-right: 4%;
 }
 
+img.item-app{
+    width: 70%;
+}
+
+p.grey-paragraph.item-app {
+    padding-bottom: 20px;
+}
+
 .menu-hamb{
     width: 30px;
     margin-top: 10px;
@@ -13,14 +21,6 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: left;
-}
-
-img.item-app{
-    width: 70%;
-}
-
-p.grey-paragraph.item-app {
-    padding-bottom: 20px;
 }
 
 .functionalities-container {
@@ -143,14 +143,14 @@ p.grey-paragraph.item-app {
         padding-right: 2%;
     }
     
-    .trackgenixapp-container {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
     img.item-app{
         width: 250px;
         height: 250px;
+    }
+
+    .trackgenixapp-container {
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .functionalities-container {
@@ -200,10 +200,8 @@ p.grey-paragraph.item-app {
 
 @media (min-width: 768px) {
     main {
-        margin-left: 250px;
         padding-top: 65px;
         padding-left: 2%;
-        padding-right: 2%;
     }
 
     .menu-hamb {

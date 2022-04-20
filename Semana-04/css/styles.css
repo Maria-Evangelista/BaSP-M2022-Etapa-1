@@ -30,6 +30,10 @@ input {
     border-radius: 4px;
 }
 
+p.grey-paragraph {
+    color: #958888;
+}
+
 .trackgenix-text-header {
     font-size: 25px;
     padding-top: 15px;    
@@ -38,10 +42,6 @@ input {
 .greenline {
     padding-bottom: 10px;
     border-bottom: solid 3px #AACE9B;
-}
-
-p.grey-paragraph {
-    color: #958888;
 }
 
 @media (min-width: 480px) {
@@ -95,7 +95,18 @@ p.grey-paragraph {
         padding-bottom: 7px;
         font-size: 20px;
     }
+
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
     
+    .right-column {
+        width: calc(100% - 250px);
+        justify-content: right;
+    }
+
     .trackgenix-text-header {
         font-size: 37px;
         padding-top: 5px;    

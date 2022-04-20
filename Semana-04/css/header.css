@@ -26,7 +26,6 @@ header {
     header {
         position: fixed;
         width: calc(100% - 250px); 
-        margin-left: 250px;
         top: 0;
     }
 }

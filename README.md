@@ -39,6 +39,8 @@ Here's the Github Pages link to see the result: <a href="https://maria-evangelis
 # Week 5
 The objective of week 5 is to solve some <b>JavaScript</b> exercises and correct errors of previous weeks.
 
+Here's the Github Pages link to see the result: <a href="https://maria-evangelista.github.io/BaSP-M2022-Etapa-1/Semana-05/" target="_blank"> https://maria-evangelista.github.io/BaSP-M2022-Etapa-1/Semana-05/</a> 
+
 ## References
 - <a href="https://www.youtube.com/playlist?list=PLEfmn-5Ho68TYu8hB4NG4pWUIJpRXA8dm" target="_blank">Fundamentos de Programación en JavaScript [YouTube playlist - Udemy]</a>
   
