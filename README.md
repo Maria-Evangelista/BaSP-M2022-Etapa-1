@@ -49,9 +49,9 @@ Here's the Github Pages link to see the result: <a href="https://maria-evangelis
 - <a href="https://www.youtube.com/playlist?list=PLEfmn-5Ho68R2r0JyrYD1m9a14ahL_Ywh" target="_blank">JavaScript: Arreglos y objetos</a> [YouTube playlist - Udemy]
 
 # Week 6
-This week we were introduced to handling the <b>DOM</b>. The objective of week 6 is to add an employee registration page and another login page, according to what was developed in week 4. The form must contain the different fields with specific validations and all its logic must be developed with Javascript.
+This week we were introduced to handling the <b>DOM</b>. The objective of week 6 is to add an employee registration page and another login page, according to what was developed in week 4. The form must contain the different fields with specific validations and all its logic must be developed using Javascript. 
 
-Here's the Github Pages link to see the result: <a href="https://maria-evangelista.github.io/BaSP-M2022-Etapa-1/Semana-06/" target="_blank"> https://maria-evangelista.github.io/BaSP-M2022-Etapa-1/Semana-06/</a>.
+Here's the Github Pages link to see the result: <a href="https://maria-evangelista.github.io/BaSP-M2022-Etapa-1/Semana-06/" target="_blank"> https://maria-evangelista.github.io/BaSP-M2022-Etapa-1/Semana-06/views</a>.
 
 ## References
 - <a href="https://www.digitalocean.com/community/tutorials/como-modificar-atributos-clases-y-estilos-en-el-dom-es" target="_blank">Cómo modificar atributos, clases y estilos en el DOM</a>  [digitalocean.com]
