@@ -1,31 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="shortcut icon" href="../assets/rocketlogo.jpg">
-    <link rel="stylesheet" href="../css/sign-up.css">
-</head>
-<body>
-    <div class="sigup-box">
-        <h1>Sign Up</h1>
-        <div class="inputs">
-            <input type="text" id="FirstName" name="FirstName" required minlength="4" 
-            maxlength="10" size="30" placeholder="First Name">
-            <input type="text" id="LastName" name="LastName" required minlength="4" 
-            maxlength="10" size="30" placeholder="Last Name">
-            <input type="text" id="email" name="email" required minlength="4" 
-            maxlength="30" size="30" placeholder="Email">
-            <input type="text" id="password" name="password" required minlength="4" 
-            maxlength="10" size="30" placeholder="Password">
-            <button name="Continue" class="continue-button">Continue</button>
-            <div class="twocolortext">
-                <p class="purpletext">Alredy have an account? </p>
-                <p class="greentext">Log In now</p>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link rel="shortcut icon" href="../assets/rocketlogo.jpg">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/main-landing.css">
+        <link rel="stylesheet" href="../css/sidebar.css">
+        <link rel="stylesheet" href="../css/sign-up.css">
+    </head>
+    <body>
+        <aside class="left-column">
+            <div class="search-aside">
+                <form>
+                    <input type="text" placeholder="Search..">
+                </form>
             </div>
+            <div class="dark-grey-sidebar">
+                <p class="menu-sidebar-text">Menu</p>
+                <p class="sidebar-green-line">
+                    <a class="home-sidebar-text" href="index.html" 
+                    target="_blank">Home</a>
+
+                </p>
+                <p class="sidebar-green-line signup-sidebar-text">
+                    Sign Up
+                </p>
+                <p class="sidebar-green-line">
+                    <a class="login-sidebar-text" href="login.html" 
+                    target="_blank">Log In</a>
+                </p>
+                <p class="sidebar-green-line contact-information">Contact information</p>
+                <p class="grey-paragraph">
+                    Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, 
+                    ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. 
+                    Sed nulla amet lorem feugiat tempus aliquam.
+                </p>
+                <p class="sidebar-green-line">
+                    <img src="../assets/letter.svg"/>
+                    <a href=# class="mail">information@untitled.tld</a>
+                </p>
+                <p class="sidebar-green-line">
+                    <img src="../assets/home.svg"/>
+                    1234 Somewhere Road #8254 Nashville, TN 00000-0000
+                </p>
+            </div> 
+        </aside>
+        <div class="right-column">
+            <header class="track-header">
+                <label class="trackgenix-text-header header-item">Trackgenix</label>
+                <img src="../assets/rocketlogo.jpg" class="rocketlogo-header header-item"/>
+            </header>
+            <main>
+                <div class="sigup-box">
+                    <h1>Sign Up</h1>
+                    <!-- <!-- <div class="inputs"> -->
+                        <div class="complete">
+                            <div class="column1">
+                                <input type="text" id="Name" name="Name" required minlength="4" 
+                                maxlength="10" size="30" placeholder="Name">
+
+                                <input type="text" id="Surname" name="Surname" required minlength="4" 
+                                maxlength="10" size="30" placeholder="Surname">
+
+                                <input type="text" id="ID" name="ID" required minlength="4" 
+                                maxlength="10" size="30" placeholder="ID">
+
+                                <input type="text" id="Birthday" name="Birthday" required minlength="4" 
+                                maxlength="10" size="30" placeholder="Birthday">
+
+                                <input type="text" id="Phone" name="Phone" required minlength="4" 
+                                maxlength="10" size="30" placeholder="Phone">
+
+                                <input type="text" id="Adress" name="Adress" required minlength="4" 
+                                maxlength="10" size="30" placeholder="Adress">
+                            </div>
+
+                            <div class="column2">
+                                
+
+                                <input type="text" id="City" name="City" required minlength="4" 
+                                maxlength="10" size="30" placeholder="City">
+
+                                <input type="text" id="ZipCode" name="ZipCode" required minlength="4" 
+                                maxlength="10" size="30" placeholder="Zip Code">
+                                
+                                <input type="text" id="Email" name="Email" required minlength="4" 
+                                maxlength="30" size="30" placeholder="Email">
+
+                                <input type="text" id="Password" name="Password" required minlength="4" 
+                                maxlength="10" size="30" placeholder="Password">
+                                
+                                <input type="text" id="RepeatPassword" name="RepeatPassword" required minlength="4" 
+                                maxlength="10" size="30" placeholder="Repeat Password">
+                            </div>
+                        </div>
+
+                        <button name="Continue" class="continue-button">Create</button>
+
+                        <div class="twocolortext">
+                            <p class="purpletext">Alredy have an account? </p>
+                            <p><a href="login.html" class="greentext">Log In now</a></p>
+                        </div>
+
+                    <!-- </div> -->
+                </div>
+            </main>
         </div>
-    </div>
-</body>
+    </body>
 </html>

@@ -3,17 +3,12 @@
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
-}
-
 h1 {
     font-size: 25px;
     color: #373867;
     font-weight: bold;
     text-shadow: 0px 9.45455px 9.45455px rgba(0, 0, 0, 0.25);
+    margin-bottom: -75px;
 }
 
 .inputs {
@@ -35,8 +30,11 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 480px;
-    width: 380px;
+    /* height: 480px; */
+    height: 430px;
+    width: 80%;
+    margin-top: 100px;
+    margin: auto;
     background-color: #AFAFC2;
     border-radius: 30px;
     align-items: center;
@@ -59,17 +57,24 @@ button {
 }
 
 .greentext {
+    text-decoration: none;
     color: #BBEEA6;
+    padding-left: 5px;
+}
+
+.greentext:hover {
+    text-decoration: underline;
 }
 
 .twocolortext {
     display: flex;
     justify-content: space-between;
-    font-size: 13.5px;
+    margin-top: 20px;
 }
 
 .forgot-password-text {
     text-align: right;
+    margin-top: 8px;
 }
 
 button:hover {
@@ -79,4 +84,76 @@ button:hover {
 button:active {
     background-color: #5dcf2b;
     transform: translateY(2px);
+}
+
+.trackgenix-text-header {
+    font-size: 37px;
+    padding-top: 5px;
+}
+
+.left-column {
+    display: none;
+}
+
+.right-column {
+    width: 100%;
+}
+
+main {
+    padding: 0px;
+    margin-top: 25px;
+}
+
+@media (min-width: 480px) {
+    .login-box {
+        width: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    .login-box {
+        width: 380px;
+    }
+  
+    header {
+        position: fixed;
+        width: calc(100% - 250px); 
+        top: 0;
+    }
+
+    .left-column {
+        display: flex;
+    }
+
+    .right-column {
+        width: calc(100% - 250px);
+    }
+
+    main {
+        margin-top: 100px;
+    }
+
+    .search-aside input {
+        background-color: #EBEBEB;
+        border: 1px solid #373867;
+        border-radius: 4px;
+        height: 17px;
+    }
+
+    .home-sidebar-text {
+        font-weight: normal;
+    }
+
+    .login-sidebar-text {
+        font-weight: bold;
+    }
+
+    .signup-sidebar-text:hover, .home-sidebar-text:hover {
+        font-weight: bold;
+    }
+
+    .home-sidebar-text {
+        color: #000000;
+        text-decoration: none;
+    }
 }
