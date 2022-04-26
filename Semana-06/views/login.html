@@ -60,15 +60,19 @@
                 <div class="login-box">
                     <h1>Log In</h1>
                     <div class="inputs">
-                        <input type="text" id="email" name="email" required minlength="4" 
-                        maxlength="30" size="30" placeholder="Email">
-                        <input type="text" id="password" name="password" required minlength="4" 
-                        maxlength="10" size="30" placeholder="Password">
+                        <input type="text" id="email" name="Email"
+                        size="30" placeholder="Email">
+                        <p id="error-containerE" class=""></p>
+
+                        <input type="text" id="password" name="Password"
+                        size="30" placeholder="Password">
+                        <div id="error-containerP" class=""></div>
+
                         <div>
                             <input type="checkbox" id="rememberme" value="rememberme"> 
                             <label for="rememberme" class="purpletext">Remember me</label>
                         </div>
-                        <button name="Continue" class="continue-button">Log In</button>
+                        <button name="login" class="login-button" id="login-button">Log In</button>
                         <p class="purpletext forgot-password-text">Forgot password?</p>
                         <div class="twocolortext">
                             <p class="purpletext">Don't have an account? </p>
@@ -77,6 +81,8 @@
                     </div>
                 </div>
             </main>
+            <!-- <div id="error-container" class=""></div> -->
         </div>
+        <script src="../javascript/login.js"></script>
     </body>
 </html>
