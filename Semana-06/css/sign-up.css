@@ -18,7 +18,7 @@ input {
     background-color: #AFAFC2;
     border: 1px solid #373867;
     border-radius: 5px;
-    color: black;
+    color: #000000;
 }
 
 button {
@@ -34,34 +34,28 @@ button {
     align-self: center;
 }
 
-.purpletext {
-    color: #373867;
-}
-
-.greentext {
-    text-decoration: none;
-    color: #BBEEA6;
-    padding-left: 7px;
-}
-
-.greentext:hover {
-    text-decoration: underline;
-}
-
-.twocolortext {
-    display: flex;
-    justify-content: space-between;
-    font-size: 13.5px;
-    margin-bottom: 20px;
-}
-
 button:hover {
-    background-color: #8ccf6f;
+    background-color: #8CCF6F;
 }
 
 button:active {
-    background-color: #5dcf2b;
+    background-color: #5DCF2B;
     transform: translateY(2px);
+}
+
+p.error-submit {
+    font-size: 13px;
+}
+
+input#name , input#surname , input#ID , input#birthday , input#phone , input#adress, 
+input#city , input#zipCode , input#email , input#password , input#repeatPassword {
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+input#birthday {
+    padding: 1px 2px; 
+    width: 212px;
 }
 
 .trackgenix-text-header {
@@ -69,6 +63,24 @@ button:active {
     padding-top: 5px;
 }
 
+.search-aside input {
+    height: 17px;
+}
+
+.home-sidebar-text {
+    color: #000000;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.signup-sidebar-text {
+    color: #000000;
+    font-weight: bold;
+}
+
+.home-sidebar-text:hover , .login-sidebar-text:hover {
+    font-weight: bold;
+}
 
 .sigup-box {
     display: flex;
@@ -92,10 +104,10 @@ button:active {
     justify-content: center;
 }
 
-.inputs {
+/* .inputs {
     display: flex;
     flex-direction: column;
-}
+} */
 
 .column1 {
     display: flex;
@@ -109,48 +121,40 @@ button:active {
     /* align-items: center; */
 }
 
-.home-sidebar-text:hover , .login-sidebar-text:hover {
-    font-weight: bold;
+.twocolortext {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13.5px;
+    margin-bottom: 20px;
 }
 
-.home-sidebar-text {
-    color: #000000;
+.purpletext {
+    color: #373867;
+}
+
+.greentext {
     text-decoration: none;
-    font-weight: normal;
+    color: #BBEEA6;
+    padding-left: 7px;
 }
 
-.signup-sidebar-text {
-    color: #000000;
-    font-weight: bold;
-}
-
-.search-aside input {
-    height: 17px;
+.greentext:hover {
+    text-decoration: underline;
 }
 
 #error-containerN, #error-containerS, #error-containerID, #error-containerB, #error-containerPN, #error-containerA,
 #error-containerZC, #error-containerC, #error-containerP, #error-containerRP, #error-containerE{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #ff000f;
+    color: #FF000F;
 }
-
-p.error-submit {
-    font-size: 13px;
-}
-
-input, input#email {
-    margin-top: 15px;
-    margin-bottom: 3px;
-}
-
-input#birthday {
-    padding: 1px 2px; 
-    width: 212px;
-}
-
 
 @media (min-width: 480px) {
+    main {
+        padding: 0px;
+        margin: 0px;
+    }
+
     .sigup-box {
         width: 560px;
         margin-top: 85px;
@@ -163,10 +167,5 @@ input#birthday {
 
     .column1 {
         padding-right: 20px;
-    }
-
-    main {
-        padding: 0px;
-        margin: 0px;
     }
 }
