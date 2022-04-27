@@ -4,7 +4,7 @@ var errorContainerE = document.getElementById('error-containerE');
 const password = document.getElementById('password');
 var errorContainerP = document.getElementById('error-containerP');
 
-const letterNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 
+const lettersNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 
 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 
 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 
 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 
@@ -56,13 +56,13 @@ function passwordIncorrect() {
         errorContainerP.appendChild(required);
         password.style.borderBottom = '1px solid #FF0000';
         return passwordValid = false;
-    } else if (password.value.length > 0 && password.value.length <= 8) {
+    } else if (password.value.length <= 8) {
         errorContainerP.appendChild(message);
         password.style.borderBottom = '1px solid #FF0000';
         return passwordValid = false;
     } else {
         for (i of password.value) {
-            if (!letterNumbers.includes(i)) {
+            if (!lettersNumbers.includes(i)) {
                 errorContainerP.appendChild(message);
                 password.style.borderBottom = '1px solid #FF0000';
                 return passwordValid = false;
@@ -86,10 +86,19 @@ const loginButton = document.getElementById('login-button');
 loginButton.addEventListener("click", clickFunction);
 
 function clickFunction() { 
+    var emailWrong = ("");
+    var passwordWrong = ("");
     if (email.value == '' || password.value == '') {
         alert('All fields are required');
     } else if (emailValid == false || passwordValid == false ) {
-        alert('Something went wrong!');
+        // alert('Something went wrong!');
+        if (emailValid == false) {
+            emailWrong = ("The Email is wrong." + '\n');
+        }
+        if (passwordValid == false) {
+            passwordWrong = ("The Password is wrong." + '\n');
+        }
+        alert(emailWrong + passwordWrong)
     } else {
         alert("Email: " + email.value + '\n' + "Password: " + password.value); 
     }

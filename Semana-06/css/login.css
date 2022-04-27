@@ -34,7 +34,7 @@ input {
 button {
     background-color: #AACE9B;
     color: #FFFFFF;
-    width: 206px;
+    width: 260px;
     height: 29px;
     border: none;
     border-radius: 5px;
@@ -53,6 +53,11 @@ button:active {
 
 input#email, input#password {
     margin-bottom: 3px;
+}
+
+input#rememberme {
+    height: 13px;
+    margin-top: 35px;
 }
 
 .left-column {

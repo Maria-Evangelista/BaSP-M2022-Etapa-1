@@ -31,7 +31,8 @@ const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'
 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 
 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-const space = " "; 
+const space = " ";
+const bar = "/";
 
 // - NOMBRE: Solo letras y debe tener más de 3 letras.
 var nameValid = true;
@@ -88,18 +89,18 @@ function surnameIncorrect() {
     if (surname.value == '') {
         errorContainerS.appendChild(required);
         surname.style.border = '2px solid #FF0000';
-        return phoneValid = false;
+        return surnameValid = false;
     } else if (surname.value.length <= 3) {
         errorContainerS.appendChild(message);
         surname.style.border = '2px solid #FF0000';
-        return phoneValid = false;
+        return surnameValid = false;
     } else {
         for (i of surname.value) {
             if (!letters.includes(i)) {
                 var message = document.createElement('p');
                 errorContainerS.appendChild(message);
                 surname.style.border = '2px solid #FF0000';
-                return phoneValid = false;
+                return surnameValid = false;
             }
         }
     }
@@ -152,31 +153,80 @@ function IDCorrection() {
 }
 
 // - FECHA DE NACIMIENTO: Con formato dd/mm/aaaa.
-// var birthdayValid = true;
-// birthday.addEventListener('blur', birthdayIncorrect);
+var birthdayValid = true;
+birthday.addEventListener('blur', birthdayIncorrect);
+toString(birthday);
 
-// function birthdayIncorrect() {
-//     var required = document.createElement('p');
-//     required.textContent = '*Field required';
-//     required.style.fontSize = '13px';
+function birthdayIncorrect() {
+    var required = document.createElement('p');
+    required.textContent = '*Field required';
+    required.style.fontSize = '13px';
 
-//     var message = document.createElement('p');
-//     message.textContent = '*Wrong date';
-//     message.classList.add('error-submit');
+    var format = document.createElement('p');
+    format.textContent = '*Format required: dd/mm/yyyy';
+    format.style.fontSize = '13px';
 
-//     if (birthday.value == '') {
-//         errorContainerB.appendChild(required);
-//         birthday.style.border = '2px solid #FF0000';
-//         return birthdayValid = false;
-//     } else {
-// }
+    var message = document.createElement('p');
+    message.textContent = '*Wrong date';
+    message.classList.add('error-submit');
 
-// birthday.addEventListener('focus', birthdayCorrection);
-// function birthdayCorrection() {
-//     errorContainerB.innerHTML = "";
-//     birthday.style.border = '2px solid #39FF14';
-//     return birthdayValid = true;
-// }
+    var legalAge = document.createElement('p');
+    legalAge.textContent = '*You must be over 18 years old';
+    legalAge.classList.add('error-submit');
+
+    var dd = birthday.value.substring(0,2);
+    var mm = birthday.value.substring(3,5);
+    var yyyy = birthday.value.substring(6,10);
+
+    if (birthday.value == '') {
+        errorContainerB.appendChild(required);
+        birthday.style.border = '2px solid #FF0000';
+        return birthdayValid = false;
+    } else if (birthday.value.substring(2,3) !== bar || birthday.value.substring(5,6) !== bar) {
+        errorContainerB.appendChild(format);
+        birthday.style.border = '2px solid #FF0000';
+        return birthdayValid = false;
+    } else if (birthday.value.length != 10) {
+        errorContainerB.appendChild(format);
+        birthday.style.border = '2px solid #FF0000';
+        return birthdayValid = false;
+    } else if (mm > 12 || yyyy < 1922) {
+        errorContainerB.appendChild(message);
+        birthday.style.border = '2px solid #FF0000';
+        return birthdayValid = false;
+    } else if (mm == 02 && dd > 28) {
+        errorContainerB.appendChild(message);
+        birthday.style.border = '2px solid #FF0000';
+        return birthdayValid = false;
+    } else if ((mm == 1 || mm == 3 || mm == 5 || mm == 7 || mm == 8 || mm == 10 || mm == 12) && (dd > 31)) {
+        errorContainerB.appendChild(message);
+        birthday.style.border = '2px solid #FF0000';
+        return birthdayValid = false;
+    } else if ((mm == 4 || mm == 6 || mm == 9 || mm == 11) && (dd > 30)) {
+            errorContainerB.appendChild(message);
+            birthday.style.border = '2px solid #FF0000';
+            return birthdayValid = false;
+    } else if (yyyy > 2004) {
+        errorContainerB.appendChild(legalAge);
+        birthday.style.border = '2px solid #FF0000';
+        return birthdayValid = false;
+    } else { 
+        for (i of birthday.value) {
+            if (!numbers.includes(i) && !bar.includes(i)) {
+                errorContainerB.appendChild(format);
+                birthday.style.border = '2px solid #FF0000';
+                return birthdayValid = false;
+            }
+        }
+    }
+}
+
+birthday.addEventListener('focus', birthdayCorrection);
+function birthdayCorrection() {
+    errorContainerB.innerHTML = "";
+    birthday.style.border = '2px solid #39FF14';
+    return birthdayValid = true;
+}
 
 // - TELÉFONO: Solo número y debe tener 10 números.
 var phoneValid = true;
@@ -384,8 +434,7 @@ function passwordIncorrect() {
         errorContainerP.appendChild(message);
         password.style.border = '2px solid #FF0000';
         return passwordValid = false;
-    }
-    else {
+    } else {
         for (i of password.value) {
             if (!letterNumbers.includes(i)) {
                 errorContainerP.appendChild(message);
@@ -442,6 +491,17 @@ const signupButton = document.getElementById('signup-button');
 signupButton.addEventListener("click", clickFunction);
 
 function clickFunction() {
+    var nameWrong = ("");
+    var surnameWrong = ("");
+    var IDWrong = ("");
+    var birthdayWrong = ("");
+    var phoneWrong = ("");
+    var adressWrong = ("");
+    var cityWrong = ("");
+    var ZCWrong = ("");
+    var emailWrong = ("");
+    var passwordWrong = ("");
+    var repeatPasswordWrong = ("");
     if (nameValue.value == '' || surname.value == '' || ID.value == '' || birthday.value == '' || phone.value == ''
     || adress.value == '' || city.value == '' || ZC.value == '' || email.value == '' || password.value == ''
     || repeatPassword.value == '') {
@@ -449,7 +509,41 @@ function clickFunction() {
     } else if (nameValid == false || surnameValid == false || IDValid == false || birthdayValid == false
     || phoneValid == false || adressValid == false || cityValid == false || ZCValid == false
     || emailValid == false || passwordValid == false || repeatPasswordValid == false) {
-        alert('Something went wrong!');
+        if (nameValid == false) {
+            nameWrong = ("The Name is wrong." + '\n');
+        }
+        if (surnameValid == false) {
+            surnameWrong = ("The Surname is wrong." + '\n');
+        }
+        if (IDValid == false) {
+            IDWrong = ("The ID is wrong." + '\n');
+        }
+        if (birthdayValid == false) {
+            birthdayWrong = ("The Birthday is wrong." + '\n');
+        }
+        if (phoneValid == false) {
+            phoneWrong = ("The Phone is wrong." + '\n');
+        }
+        if (adressValid == false) {
+            adressWrong = ("The Adress is wrong." + '\n');
+        }
+        if (cityValid == false) {
+            cityWrong = ("The City is wrong." + '\n');
+        }
+        if (ZCValid == false) {
+            ZCWrong = ("The Zip Code is wrong." + '\n');
+        }
+        if (emailValid == false) {
+            emailWrong = ("The Email is wrong." + '\n');
+        }
+        if (passwordValid == false) {
+            passwordWrong = ("The Password is wrong." + '\n');
+        }
+        if (repeatPasswordValid == false) {
+            repeatPasswordWrong = ("Repeat Password is wrong." + '\n');
+        } 
+        alert(nameWrong + surnameWrong + IDWrong + birthdayWrong + phoneWrong + 
+        adressWrong + cityWrong + ZCWrong + emailWrong + passwordWrong + repeatPasswordWrong)
     } else { 
         alert("Name: " + nameValue.value + '\n' +
         "Surname: " + surname.value + '\n' +
