@@ -42,14 +42,14 @@ The objective of week 5 was to solve some <b>JavaScript</b> exercises and correc
 Here's the Github Pages link to see the result: <a href="https://maria-evangelista.github.io/BaSP-M2022-Etapa-1/Semana-05/" target="_blank"> https://maria-evangelista.github.io/BaSP-M2022-Etapa-1/Semana-05/</a>.
 
 ## References
-- <a href="https://www.youtube.com/playlist?list=PLEfmn-5Ho68TYu8hB4NG4pWUIJpRXA8dm" target="_blank">Fundamentos de Programación en JavaScript</a> [YouTube playlist - Udemy]
+- <a href="https://www.youtube.com/playlist?list=PLEfmn-5Ho68TYu8hB4NG4pWUIJpRXA8dm" target="_blank">Fundamentos de Programación en JavaScript</a> [YouTube Playlist - Udemy]
   
-- <a href="https://www.youtube.com/playlist?list=PLEfmn-5Ho68Qg7airyFpWQFP-Abxnvk-y" target="_blank">JavaScript: Sentencias y bucles</a> [YouTube playlist - Udemy]
+- <a href="https://www.youtube.com/playlist?list=PLEfmn-5Ho68Qg7airyFpWQFP-Abxnvk-y" target="_blank">JavaScript: Sentencias y bucles</a> [YouTube Playlist - Udemy]
   
-- <a href="https://www.youtube.com/playlist?list=PLEfmn-5Ho68R2r0JyrYD1m9a14ahL_Ywh" target="_blank">JavaScript: Arreglos y objetos</a> [YouTube playlist - Udemy]
+- <a href="https://www.youtube.com/playlist?list=PLEfmn-5Ho68R2r0JyrYD1m9a14ahL_Ywh" target="_blank">JavaScript: Arreglos y objetos</a> [YouTube Playlist - Udemy]
 
 # Week 6
-This week we were introduced to handling the <b>DOM</b>. The objective of week 6 is to add an employee registration page and another login page, according to what was developed in week 4. The form must contain the different fields with specific validations and all its logic must be developed using Javascript. 
+This week we were introduced to handling the <b>DOM</b>. The objective of week 6 was to add an employee registration page and another login page, according to what was developed in week 4. The form had to contain the different fields with specific validations and all its logic had to be developed using Javascript. 
 
 Here's the Github Pages link to see the result: <a href="https://maria-evangelista.github.io/BaSP-M2022-Etapa-1/Semana-06/" target="_blank"> https://maria-evangelista.github.io/BaSP-M2022-Etapa-1/Semana-06/views</a>.
 
@@ -62,8 +62,20 @@ Here's the Github Pages link to see the result: <a href="https://maria-evangelis
 
 - <a href="https://medium.com/jspoint/understanding-basics-of-dom-265b73d958d1" target="_blank">Understanding the basics of DOM</a> [medium.com]
 
-- <a href="https://www.youtube.com/watch?v=Wd_IxG7lOP8" target="_blank">JavaScript DOM Crash Course</a> [YouTube playlist - TraversyMedia] 
+- <a href="https://www.youtube.com/watch?v=Wd_IxG7lOP8" target="_blank">JavaScript DOM Crash Course</a> [YouTube Playlist - TraversyMedia]
 
+
+# Week 7
+This week we were introduced to <b>JavaScript Async y Storage</b>. The objective of week 7 is to extend the forms of week 6 so that when pressing the confirmation buttons, the data loaded in them is sent to a web server through an HTTP call (request) from JavaScript.
+
+Here's the Github Pages link to see the result: <a href="https://maria-evangelista.github.io/BaSP-M2022-Etapa-1/Semana-07/" target="_blank"> https://maria-evangelista.github.io/BaSP-M2022-Etapa-1/Semana-07/views</a>.
+
+## References
+- <a href="https://www.youtube.com/watch?v=JL-us3J8B_o" target="_blank">Callbacks en JavaScript</a> [YouTube Video - Código Mentor]
+  
+- <a href="https://www.youtube.com/watch?v=aYWObkKz-Og" target="_blank">Promesas en JavaScript</a> [YouTube Video - Grover Vásquez]
+
+- <a href="https://www.youtube.com/watch?v=NU4c9kbouMQ" target="_blank">Cookies, Local Storage y Session Storage</a> [YouTube Video - Códigos de Programación]
 
 # Contact
 Author: Maria Evangelista

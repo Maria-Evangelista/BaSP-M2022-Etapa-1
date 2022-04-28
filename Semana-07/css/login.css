@@ -1,0 +1,176 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-size: 25px;
+    color: #373867;
+    font-weight: bold;
+    text-shadow: 0px 9.45455px 9.45455px rgba(0, 0, 0, 0.25);
+    margin-bottom: -75px;
+}
+
+main {
+    padding: 0px;
+    margin-top: 25px;
+}
+
+p.error-submit {
+    font-size: 13px;
+}
+
+input {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: 25px;
+    background-color: #AFAFC2;
+    border: none;
+    border-bottom: 1.5px #000000 solid;
+    color: #000000;
+    border-radius: 0px;
+}
+
+button {
+    background-color: #AACE9B;
+    color: #FFFFFF;
+    width: 260px;
+    height: 29px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px #818181;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #8CCF6F;
+}
+
+button:active {
+    background-color: #5DCF2B;
+    transform: translateY(2px);
+}
+
+input#email, input#password {
+    margin-bottom: 3px;
+}
+
+input#rememberme {
+    height: 13px;
+    margin-top: 35px;
+}
+
+.left-column {
+    display: none;
+}
+
+.right-column {
+    width: 100%;
+}
+
+.trackgenix-text-header {
+    font-size: 37px;
+    padding-top: 5px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* height: 480px; */
+    height: 430px;
+    width: 80%;
+    margin-top: 100px;
+    margin: auto;
+    background-color: #AFAFC2;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0px 0px 4px 5px #DEDFE7;
+}
+
+.twocolortext {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.purpletext {
+    color: #373867;
+}
+
+.greentext {
+    text-decoration: none;
+    color: #BBEEA6;
+    padding-left: 5px;
+}
+
+.greentext:hover {
+    text-decoration: underline;
+}
+
+.forgot-password-text {
+    text-align: right;
+    margin-top: 8px;
+}
+
+#error-containerE, #error-containerP {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #FF000F;
+}
+
+@media (min-width: 480px) {
+    .login-box {
+        width: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        margin-top: 135px;
+    }
+
+    header {
+        position: fixed;
+        width: calc(100% - 250px); 
+        top: 0;
+    }
+
+    .search-aside input {
+        background-color: #EBEBEB;
+        border: 1px solid #373867;
+        border-radius: 4px;
+        height: 17px;
+    }
+
+    .login-box {
+        width: 380px;
+    }
+  
+    .left-column {
+        display: flex;
+    }
+
+    .right-column {
+        width: calc(100% - 250px);
+    }
+
+    .home-sidebar-text {
+        font-weight: normal;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .login-sidebar-text {
+        font-weight: bold;
+    }
+
+    .signup-sidebar-text:hover, .home-sidebar-text:hover {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Log In</title>
+        <link rel="shortcut icon" href="../assets/rocketlogo.jpg">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/main-landing.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/sidebar.css">
+        <link rel="stylesheet" href="../css/login.css">
+    </head>
+    <body>
+        <aside class="left-column">
+            <div class="search-aside">
+                <form>
+                    <input type="text" placeholder="Search..">
+                </form>
+            </div>
+            <div class="dark-grey-sidebar">
+                <p class="menu-sidebar-text">Menu</p>
+                <p class="sidebar-green-line">
+                    <a class="home-sidebar-text" href="index.html" 
+                    target="_blank">Home</a>
+
+                </p>
+                <p class="sidebar-green-line">
+                    <a class="signup-sidebar-text" href="sign-up.html" 
+                    target="_blank">Sign Up</a>
+                </p>
+                <p class="sidebar-green-line login-sidebar-text">
+                    Log In
+                </p>
+                <p class="sidebar-green-line contact-information">Contact information</p>
+                <p class="grey-paragraph">
+                    Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, 
+                    ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. 
+                    Sed nulla amet lorem feugiat tempus aliquam.
+                </p>
+                <p class="sidebar-green-line">
+                    <img src="../assets/letter.svg"/>
+                    <a href=# class="mail">information@untitled.tld</a>
+                </p>
+                <p class="sidebar-green-line">
+                    <img src="../assets/home.svg"/>
+                    1234 Somewhere Road #8254 Nashville, TN 00000-0000
+                </p>
+            </div> 
+        </aside>
+        <div class="right-column">
+            <header class="track-header">
+                <label class="trackgenix-text-header header-item">Trackgenix</label>
+                <img src="../assets/rocketlogo.jpg" class="rocketlogo-header header-item"/>
+            </header>
+            <main>
+                <div class="login-box">
+                    <h1>Log In</h1>
+                    <div class="inputs">
+                        <input type="text" id="email" name="Email"
+                        size="30" placeholder="Email">
+                        <p id="error-containerE" class=""></p>
+
+                        <input type="text" id="password" name="Password"
+                        size="30" placeholder="Password">
+                        <div id="error-containerP" class=""></div>
+
+                        <div>
+                            <input type="checkbox" id="rememberme" value="rememberme"> 
+                            <label for="rememberme" class="purpletext">Remember me</label>
+                        </div>
+                        <button name="login" class="login-button" id="login-button">Log In</button>
+                        <p class="purpletext forgot-password-text">Forgot password?</p>
+                        <div class="twocolortext">
+                            <p class="purpletext">Don't have an account? </p>
+                            <p><a href="sign-up.html" class="greentext">Sign Up now</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- <div id="error-container" class=""></div> -->
+        </div>
+        <script src="../javascript/login.js"></script>
+    </body>
+</html>
