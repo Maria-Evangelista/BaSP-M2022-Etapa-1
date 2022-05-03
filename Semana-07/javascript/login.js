@@ -56,7 +56,7 @@ function passwordIncorrect() {
         errorContainerP.appendChild(required);
         password.style.borderBottom = '1px solid #FF0000';
         return passwordValid = false;
-    } else if (password.value.length <= 8) {
+    } else if (password.value.length < 8) {
         errorContainerP.appendChild(message);
         password.style.borderBottom = '1px solid #FF0000';
         return passwordValid = false;
@@ -85,13 +85,12 @@ function passwordCorrection() {
 const loginButton = document.getElementById('login-button');
 loginButton.addEventListener("click", clickFunction);
 
-function clickFunction() { 
+function clickFunction() {
     var emailWrong = ("");
     var passwordWrong = ("");
     if (email.value == '' || password.value == '') {
         alert('All fields are required');
     } else if (emailValid == false || passwordValid == false ) {
-        // alert('Something went wrong!');
         if (emailValid == false) {
             emailWrong = ("The Email is wrong." + '\n');
         }
@@ -99,7 +98,17 @@ function clickFunction() {
             passwordWrong = ("The Password is wrong." + '\n');
         }
         alert(emailWrong + passwordWrong)
-    } else {
-        alert("Email: " + email.value + '\n' + "Password: " + password.value); 
+    } else if (emailValid == true || passwordValid == true) {
+        fetch(`https://basp-m2022-api-rest-server.herokuapp.com/login?email=${email.value}&password=${password.value}`)
+        .then(function (response) {
+                if(response.ok) {
+                return alert("Log In successful" + "\n" + email.value + "\n" + password.value)
+                } else {
+                return alert("Log In failed")
+                }
+            })
+            .catch(function (error){
+                console.log("Error: ", error);
+            })
     }
 }

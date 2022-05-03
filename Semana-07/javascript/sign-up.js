@@ -430,7 +430,7 @@ function passwordIncorrect() {
         errorContainerP.appendChild(required);
         password.style.border = '2px solid #FF0000';
         return passwordValid = false;
-    } else if (password.value.length <= 8) {
+    } else if (password.value.length < 8) {
         errorContainerP.appendChild(message);
         password.style.border = '2px solid #FF0000';
         return passwordValid = false;
@@ -469,7 +469,7 @@ function repeatPasswordIncorrect() {
         repeatPassword.style.border = '2px solid #FF0000';
         return repeatPasswordValid = false;
     } else if (repeatPassword.value.length > 0 && repeatPassword.value.length > 0 && (repeatPassword.value.length <= 8
-        || password.value.length <= 8 || repeatPassword.value != password.value)) {
+        || password.value.length < 8 || repeatPassword.value != password.value)) {
         errorContainerRP.appendChild(message);
         repeatPassword.style.border = '2px solid #FF0000';
         return repeatPasswordValid = false;
@@ -487,6 +487,18 @@ function repeatPasswordCorrection() {
 //información cargada en el formulario en caso de que haya pasado todas las validaciones.
 // Si alguna validación no pasó, además de mostrar el error debajo del campo, también se debe
 //mostrar el error en el cartel emergente.
+function toMonthDayYear(dateToConv){
+    [yyyy, mm, dd] = dateToConv.split('-');
+    var dateMDY = [mm, dd, yyyy].join('/')
+    return dateMDY
+}
+
+function toYearMonthDay(dateToConv){
+    [mm, dd, yyyy] = dateToConv?.split('/');
+    var dateYMD = [yyyy, mm, dd].join('-')
+    return dateYMD
+}
+
 const signupButton = document.getElementById('signup-button');
 signupButton.addEventListener("click", clickFunction);
 
@@ -544,16 +556,44 @@ function clickFunction() {
         } 
         alert(nameWrong + surnameWrong + IDWrong + birthdayWrong + phoneWrong + 
         adressWrong + cityWrong + ZCWrong + emailWrong + passwordWrong + repeatPasswordWrong)
-    } else { 
-        alert("Name: " + nameValue.value + '\n' +
-        "Surname: " + surname.value + '\n' +
-        "ID: " + ID.value + '\n' +
-        "Birthday: " + birthday.value + '\n' +
-        "Phone: " + phone.value + '\n' +
-        "Adress: " + adress.value + '\n' +
-        "City: " + city.value + '\n' +
-        "Zip Code: " + ZC.value + '\n' +
-        "Email: " + email.value + '\n' +
-        "Password: " + password.value);
+    } else if (nameValid == true || surnameValid == true || IDValid == true || birthdayValid == true
+    || phoneValid == true || adressValid == true || cityValid == true || ZCValid == true
+        || emailValid == true || passwordValid == true || repeatPasswordValid == true) { 
+        fetch(`https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${nameValue.value}&lastName=${surname.value}&
+        dni=${ID.value}&dob=${toMonthDayYear(birthday.value)}&phone=${phone.value}&adress=${adress.value}&city=${city.value}&
+        zip=${ZC.value}&email=${email.value}&password=${password.value}`)
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(jsonResponse) {
+            if(jsonResponse.success) {
+                alert("Name: " + nameValue.value + '\n' +
+                "Surname: " + surname.value + '\n' +
+                "ID: " + ID.value + '\n' +
+                "Birthday: " + birthday.value + '\n' +
+                "Phone: " + phone.value + '\n' +
+                "Adress: " + adress.value + '\n' +
+                "City: " + city.value + '\n' +
+                "Zip Code: " + ZC.value + '\n' +
+                "Email: " + email.value + '\n' +
+                "Password: " + password.value);
+                localStorage.setItem("name", jsonResponse.data.name);
+                localStorage.setItem("lastName", jsonResponse.data.lastName);
+                localStorage.setItem("dni", jsonResponse.data.dni);
+                localStorage.setItem("dob", jsonResponse.data.dob);
+                localStorage.setItem("phone", jsonResponse.data.phone);
+                localStorage.setItem("address", jsonResponse.data.address);
+                localStorage.setItem("city", jsonResponse.data.city);
+                localStorage.setItem("zip", jsonResponse.data.zip);
+                localStorage.setItem("email", jsonResponse.data.email);
+                localStorage.setItem("password", jsonResponse.data.password);
+                return true;
+            } else {
+                return alert('Sign up failed')
+            }
+        })
+        .catch(function (error){
+            console.log("Error: ", error);
+        })
     }
 }
