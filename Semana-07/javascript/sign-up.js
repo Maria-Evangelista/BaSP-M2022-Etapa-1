@@ -488,15 +488,19 @@ function repeatPasswordCorrection() {
 // Si alguna validación no pasó, además de mostrar el error debajo del campo, también se debe
 //mostrar el error en el cartel emergente.
 function toMonthDayYear(dateToConv){
-    [yyyy, mm, dd] = dateToConv.split('-');
+    var dd = birthday.value.substring(0,2);
+    var mm = birthday.value.substring(3,5);
+    var yyyy = birthday.value.substring(6,10);
     var dateMDY = [mm, dd, yyyy].join('/')
     return dateMDY
 }
 
-function toYearMonthDay(dateToConv){
-    [mm, dd, yyyy] = dateToConv?.split('/');
-    var dateYMD = [yyyy, mm, dd].join('-')
-    return dateYMD
+function toDayMonthYear(dateToOr){
+    var dd = birthday.value.substring(0,2);
+    var mm = birthday.value.substring(3,5);
+    var yyyy = birthday.value.substring(6,10);
+    var dateDMY = [dd, mm, yyyy].join('/')  
+    return dateDMY
 }
 
 const signupButton = document.getElementById('signup-button');
@@ -558,10 +562,8 @@ function clickFunction() {
         adressWrong + cityWrong + ZCWrong + emailWrong + passwordWrong + repeatPasswordWrong)
     } else if (nameValid == true || surnameValid == true || IDValid == true || birthdayValid == true
     || phoneValid == true || adressValid == true || cityValid == true || ZCValid == true
-        || emailValid == true || passwordValid == true || repeatPasswordValid == true) { 
-        fetch(`https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${nameValue.value}&lastName=${surname.value}&
-        dni=${ID.value}&dob=${toMonthDayYear(birthday.value)}&phone=${phone.value}&adress=${adress.value}&city=${city.value}&
-        zip=${ZC.value}&email=${email.value}&password=${password.value}`)
+    || emailValid == true || passwordValid == true || repeatPasswordValid == true) { 
+        fetch(`https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${nameValue.value}&lastName=${surname.value}&dni=${ID.value}&dob=${(toMonthDayYear(birthday.value))}&phone=${phone.value}&address=${adress.value}&city=${city.value}&zip=${ZC.value}&email=${email.value}&password=${password.value}&confpassword=${repeatPassword.value}`)
         .then(function(response){
             return response.json();
         })
@@ -577,16 +579,16 @@ function clickFunction() {
                 "Zip Code: " + ZC.value + '\n' +
                 "Email: " + email.value + '\n' +
                 "Password: " + password.value);
-                localStorage.setItem("name", jsonResponse.data.name);
-                localStorage.setItem("lastName", jsonResponse.data.lastName);
-                localStorage.setItem("dni", jsonResponse.data.dni);
-                localStorage.setItem("dob", jsonResponse.data.dob);
-                localStorage.setItem("phone", jsonResponse.data.phone);
-                localStorage.setItem("address", jsonResponse.data.address);
-                localStorage.setItem("city", jsonResponse.data.city);
-                localStorage.setItem("zip", jsonResponse.data.zip);
-                localStorage.setItem("email", jsonResponse.data.email);
-                localStorage.setItem("password", jsonResponse.data.password);
+                localStorage.setItem("Name", jsonResponse.data.name);
+                localStorage.setItem("Surname", jsonResponse.data.lastName);
+                localStorage.setItem("ID", jsonResponse.data.dni);
+                localStorage.setItem("Birthday", jsonResponse.data.dob);
+                localStorage.setItem("Phone", jsonResponse.data.phone);
+                localStorage.setItem("Address", jsonResponse.data.address);
+                localStorage.setItem("City", jsonResponse.data.city);
+                localStorage.setItem("ZipCode", jsonResponse.data.zip);
+                localStorage.setItem("Email", jsonResponse.data.email);
+                localStorage.setItem("Password", jsonResponse.data.password);
                 return true;
             } else {
                 return alert('Sign up failed')
@@ -597,3 +599,19 @@ function clickFunction() {
         })
     }
 }
+
+function localSt() {
+    nameValue.value = localStorage.getItem("Name");
+    surname.value = localStorage.getItem("Surname");
+    ID.value = localStorage.getItem("ID");
+    birthday.value = localStorage.getItem("Birthday");
+    phone.value = localStorage.getItem("Phone");
+    adress.value = localStorage.getItem("Address");
+    city.value = localStorage.getItem("City");
+    ZC.value = localStorage.getItem("ZipCode");
+    email.value = localStorage.getItem("Email");
+    password.value = localStorage.getItem("Password");
+    repeatPassword.value = localStorage.getItem("Password");
+}
+
+document.addEventListener("DOMContentLoaded", localSt);
